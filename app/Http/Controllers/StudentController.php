@@ -96,6 +96,8 @@ class StudentController extends Controller
         $student->age = $request->age;
         $student->career = $request->career;
 
+        $student->save();
+
         $data = [
             'message' => 'Estudiante actualizado correctamente',
             'estudiante' => $student
